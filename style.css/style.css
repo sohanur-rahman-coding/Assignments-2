@@ -16,8 +16,10 @@
     font-size: 1rem;
     font-weight: 600px;
     text-align: left;
+    cursor: pointer;
 
 }
+
 
 header {
     background-color: #1A0B2E;
@@ -68,7 +70,7 @@ nav ul {
     align-items: center; */
 
 
-.b-1st {
+/* .b-1st {
     margin-top: 100px;
     margin-left: 582px;
     width: 350px;
@@ -81,4 +83,41 @@ nav ul {
     transform: translate(-50%, -50%);
     z-index: 2;
     max-width: 30%;
+} */
+ .banner-circle{
+    position: relative;
+    left: 580px;
+    top: 109px;
+    width: 350px;
+ }
+ .banner-microphone{
+    z-index: 2;
+    position: relative;
+    left: 700px;
+    top: -150px;
+    width: 150px;
+ }
+.banner-content{
+    text-align: center;
+}
+.banner-heading{
+    color: white;
+    font-size: 3.75rem ;
+    margin-top: 40px;
+
+}
+.banner-description{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+.banner-btn{
+    background: none;
+    border: 1px solid #00FF88 ;
+    border-radius: 10000px;
+    padding: 12px 20px 12px 20px;
+    color: #00FF88;
+    margin-left: 8px;
+    cursor: pointer;
+    
 }
