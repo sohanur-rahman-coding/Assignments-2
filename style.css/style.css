@@ -84,30 +84,36 @@ nav ul {
     background-size: cover;
     background-position: center;
     max-width: 1600px;
-    height: 760px;
+    height: 730px;
 }
 
+
+
 .banner-circle {
+    display: flex;
+    justify-content: center;
+    top: 100px;
     position: relative;
-    left: 580px;
-    top: 109px;
-    width: 350px;
+
 }
 
 .banner-microphone {
     z-index: 2;
-    position: relative;
-    left: 695px;
-    top: -160px;
+    position: absolute;
+
     width: 150px;
+
+    right: 665px;
+    top: 70px;
 }
 
 .new {
     z-index: 5;
-    position: relative;
-    left: 780px;
-    top: -450px;
+    position: absolute;
+    left: 800px;
+    top: 0px;
     width: 150px;
+
 }
 
 .btn img {
@@ -118,14 +124,14 @@ nav ul {
 
 .banner-content {
     text-align: center;
-    margin-bottom: 101px;
-    /* border: 2px solid white; */
+    margin-top: 150px;
+
 }
 
 .banner-heading {
     color: white;
     font-size: 3.75rem;
-    /* margin-top: 40px; */
+
 
 }
 
@@ -160,7 +166,7 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 120px;
+    /* padding-top: 120px; */
 }
 
 .about-h2 {
@@ -240,7 +246,7 @@ nav ul {
 }
 
 .choose-card {
-    background-color: rgba(53, 17, 101, 0.4);    
+    background-color: rgba(53, 17, 101, 0.4);
     border: none;
     border-radius: 40px;
 }
@@ -402,7 +408,7 @@ nav ul {
 
 
 @media screen and (max-width:576px) {
-    
+
     .tittle-section {
         font-size: 2rem;
     }
@@ -433,27 +439,28 @@ nav ul {
         width: 100%;
         height: 464px;
         overflow: hidden;
-        
-    }
-   
 
-    .banner-circle {       
+    }
+
+    .banner-circle {
+        display: flex;
+        justify-content: center;        
         position: relative;
-        left: 138px;
-        top: 30px;
-        
+        bottom: 0;
+        top: 25px;        
     }
 
     .banner-circle img {
         width: 200px;
     }
 
+
     .banner-microphone {
-        position: relative;
-        left: 200px;
-        top: -130px;
-        
-        
+        z-index: 2;
+        position: absolute;
+        width: 150px;
+        right: 24%;
+        top: 25%;
     }
 
     .banner-microphone img {
@@ -461,23 +468,26 @@ nav ul {
     }
 
     .new {
-        position: relative;
-        left: 265px;
-        top: -300px;
-        width: 150px;
-        
+        z-index: 999;
+        position: absolute;
+        bottom: 0;
+        left: 55%;
     }
 
     .new img {
         width: 70px;
     }
 
-    .banner-content{
-        position: absolute;
-        top: 350px;
-        text-align: center;        
-        padding: 0px 20px 80px 20px;
+
+
+
+
+    .banner-content {
+        text-align: center;
+        margin-top: 70px;
+
     }
+
     /* about section  */
 
     .about-content {
@@ -489,7 +499,7 @@ nav ul {
         max-width: 400px;
     }
 
-    
+
 
     .about-rating {
         display: grid;
@@ -508,20 +518,25 @@ nav ul {
 
     }
 
-   
+
 
     .choose-box {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        padding: 10px;
+        padding: 20px;
         gap: 16px;
         margin-top: 16px;
+        justify-content: center;
+
+
 
     }
 
     .choose-card {
-        max-width: 400px;
         padding: 24px;
+        width: 350px;
+
+
     }
 
     /* featured section  */
@@ -533,9 +548,11 @@ nav ul {
         margin-top: 0px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
+        justify-content: center;
+        margin: 0 auto;
         gap: 16px;
         padding: 20px;
+        width: 400px;
     }
 
     /* host section  */
@@ -575,23 +592,26 @@ nav ul {
 
     .footer-icon {
         display: grid;
-        grid-template-columns: repeat(2, max-content);        
+        grid-template-columns: repeat(2, max-content);
         justify-content: center;
-        
-        gap:16px 14px;
-        margin-top: 30px;
+
+        gap: 16px 14px;
+        margin-top: 20px;
         margin-left: -15px;
     }
-    .icon-s-a{
+
+    .icon-s-a {
         gap: 20px;
         justify-content: center;
 
     }
-    .yt{
+
+    .yt {
         margin-left: 60px;
-    }  
+    }
+
     .copy-right {
-        text-align: center;       
+        text-align: center;
 
     }
 
