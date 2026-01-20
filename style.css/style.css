@@ -401,7 +401,7 @@ nav ul {
 /* Small device  */
 
 
-@media screen and (min-width:412px) and (max-width:576px) {
+@media screen and (max-width:576px) {
     
     .tittle-section {
         font-size: 2rem;
